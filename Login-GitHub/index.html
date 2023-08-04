@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in to GitHub - GitHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="all">
+    <div id="header">
+        <div class="header_container">
+            <b>Hello, world!</b>
+        </div>
+    </div>
+    <main>
+        <div id="login" class="auth_form">
+            <h1>Sign in to GitHub</h1>
+            <div class="auth_form-body">
+                <form action="/session">
+                    <label for="login_field">Username or email address</label>
+                    <input type="text" name="login" id="login_field" autofocus="autofocus">
+                    <div class="relative">
+                        <label for="password">Password</label>
+                        <a href="">Forgot password?</a>
+                        <input type="password" name="password" id="password">
+                        <input class="btn_primary" type="submit" value="Sign in">
+                    </div>
+                </form>
+            </div>
+            <div class="login_callout">
+                <p>New to GitHub? <a href="">Create an account</a>.</p>
+            </div>
+        </div>
+    </main>
+    <div class="footer_container">
+        <ul class="list">
+            <li class="list_li">Terms</li>
+            <li class="list_li">Privacy</li>
+            <li class="list_li">Security</li>
+            <li class="list_li">Contact</li>
+        </ul>
+    </div>
+    </div>
+</body>
+</html>

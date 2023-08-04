@@ -1,0 +1,119 @@
+:root{
+    --color-canvas-defaul:#161b22;
+    --color-fd-default:#F0F6FC;
+    --color-link-default:#2f81f7;
+    --color-contact:#7d8590;
+    --color-login:#161b22;
+    --color-btn:#238636;
+    --color-border:#21262d;
+}
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-canvas-defaul);
+    color: var(--color-fd-default);
+}
+.all{
+    min-width: 360px;
+}
+#header{
+    height: 15vh;
+    width: 100%;
+}
+.header_container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+main{
+    height: 55vh;
+    width: 100%;
+}
+.auth_form{
+    height: 100%;
+    margin: 0 10px;
+    padding: 0 16px;
+}
+.auth_form > h1{
+    text-align: center;
+}
+.auth_form-body{
+    padding: 16px;
+    margin: 16px 0 0;
+    font-size: 14px;
+    background-color: var(--color-login);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+}
+label{
+    margin: 0 0 8px;
+}
+input{
+    width: 100%;
+    height: 32px;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    margin: 4px 0 16px;
+    padding: 5px 12px;
+}
+.relative{    
+    position: relative;
+}
+.relative a{
+    text-decoration: none;
+    font-size: 12px;
+    color: var(--color-link-default);
+    float: right;
+}
+.btn_primary{
+    width: 100%;
+    font-size: 14px;
+    background-color:var(--color-btn);
+}
+.login_callout{
+    padding: 16px;
+    margin: 16px 0 0;
+    font-size: 14px;
+    background-color: var(--color-login);
+    border: 1px solid #21262d;
+    border-radius: 6px;
+    text-align: center;
+}
+.login_callout a{
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--color-link-default);
+}
+.footer_container{
+    height: 10vh;
+    width: 100%;
+    text-align: center;
+}
+.list_li{
+    display: inline;
+    padding-right: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+.list_li:not(:last-child){
+    color: var(--color-link-default);
+}
+.list_li:last-child{
+    color: var(--color-contact);
+}
+@media only screen and (min-width: 361px){
+    .all{
+        max-width: 360px;
+    }
+    body{
+        width: 100%;
+        display: grid;
+        justify-content: center;
+    }
+}
